@@ -10,10 +10,29 @@
   @apply font-semibold tracking-tight text-neutral-100;
 }
 
+.menuBtn {
+  @apply hidden text-neutral-300 md:hidden;
+}
+
 .links {
   @apply flex items-center gap-4 text-neutral-300;
 }
 
 .link {
   @apply hover:text-neutral-100 transition-colors;
+}
+
+/* Desktop-first responsive: collapse nav when viewport is below 768px */
+@media (max-width: 767px) {
+  .menuBtn {
+    @apply block;
+  }
+
+  .links {
+    @apply absolute left-0 right-0 top-14 hidden flex-col bg-neutral-950/95 border-b border-neutral-900 px-6 py-4;
+  }
+
+  .linksOpen {
+    @apply flex;
+  }
 }

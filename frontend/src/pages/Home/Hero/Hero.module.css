@@ -1,0 +1,19 @@
+.root {
+  @apply max-w-5xl mx-auto px-6 py-16;
+}
+
+.muted {
+  @apply text-neutral-300;
+}
+
+.content {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-10 items-center;
+}
+
+.avatarWrap {
+  @apply flex justify-center md:justify-end;
+}
+
+.avatar {
+  @apply w-40 h-40 md:w-56 md:h-56 rounded-full ring-1 ring-neutral-800 shadow-lg object-cover;
+}

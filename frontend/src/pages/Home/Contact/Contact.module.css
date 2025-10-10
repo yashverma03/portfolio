@@ -1,0 +1,11 @@
+.root {
+  @apply max-w-5xl mx-auto px-6 py-16;
+}
+
+.title {
+  @apply text-3xl font-semibold tracking-tight mb-6 text-neutral-100;
+}
+
+.muted {
+  @apply text-neutral-300;
+}
