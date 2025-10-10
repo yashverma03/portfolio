@@ -1,0 +1,19 @@
+.root {
+  @apply sticky top-0 z-40 bg-neutral-950/75 backdrop-blur border-b border-neutral-900;
+}
+
+.bar {
+  @apply max-w-5xl mx-auto px-6 h-14 flex items-center justify-between;
+}
+
+.brand {
+  @apply font-semibold tracking-tight text-neutral-100;
+}
+
+.links {
+  @apply flex items-center gap-4 text-neutral-300;
+}
+
+.link {
+  @apply hover:text-neutral-100 transition-colors;
+}
