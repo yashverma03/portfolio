@@ -21,3 +21,27 @@
 .description {
   @apply mt-4 w-full max-w-4xl text-neutral-300;
 }
+
+.ctaButtons {
+  @apply flex flex-wrap gap-4 mt-8;
+}
+
+.ctaButton {
+  @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium text-sm transition-all duration-200 border;
+}
+
+.ctaButton:nth-child(1) {
+  @apply bg-blue-600 text-white border-blue-600 hover:bg-blue-700 hover:border-blue-700 hover:shadow-lg hover:shadow-blue-500/25;
+}
+
+.ctaButton:nth-child(2) {
+  @apply bg-green-600 text-white border-green-600 hover:bg-green-700 hover:border-green-700 hover:shadow-lg hover:shadow-green-500/25;
+}
+
+.ctaButton:nth-child(3) {
+  @apply bg-gray-800 text-white border-gray-700 hover:bg-gray-700 hover:border-gray-600 hover:shadow-lg hover:shadow-gray-500/25;
+}
+
+.ctaIcon {
+  @apply w-5 h-5;
+}

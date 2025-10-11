@@ -19,6 +19,35 @@ const Hero = () => {
             dashboards, and AI-driven pipelines. I enjoy delivering high-impact solutions end-to-end
             that power scalable web applications.
           </p>
+          <div className={styles.ctaButtons}>
+            <a
+              href='https://www.linkedin.com/in/yashverma2003'
+              target='_blank'
+              rel='noopener noreferrer'
+              className={styles.ctaButton}
+            >
+              <img src='/src/assets/hero/linkedin.svg' alt='LinkedIn' className={styles.ctaIcon} />
+              LinkedIn
+            </a>
+            <a
+              href='https://drive.google.com/file/d/1YkySjHIHsbBpE9tKmhXSG3TPu-0UMOTV'
+              target='_blank'
+              rel='noopener noreferrer'
+              className={styles.ctaButton}
+            >
+              <img src='/src/assets/hero/googleDrive.svg' alt='Resume' className={styles.ctaIcon} />
+              Resume
+            </a>
+            <a
+              href='https://github.com/yashverma03'
+              target='_blank'
+              rel='noopener noreferrer'
+              className={styles.ctaButton}
+            >
+              <img src='/src/assets/hero/github.svg' alt='GitHub' className={styles.ctaIcon} />
+              GitHub
+            </a>
+          </div>
         </motion.div>
       </div>
     </header>
