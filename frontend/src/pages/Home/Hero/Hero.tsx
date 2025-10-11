@@ -1,15 +1,10 @@
-import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
 
 const Hero = () => {
   return (
     <header id='hero' className={styles.root}>
       <div className={styles.content}>
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
+        <div>
           <p className={styles.muted}>Hi, I'm</p>
           <h1 className={styles.title}>Yash Verma</h1>
           <p className={styles.subtitle}>Software Engineer</p>
@@ -49,7 +44,7 @@ const Hero = () => {
               GitHub
             </a>
           </div>
-        </motion.div>
+        </div>
       </div>
     </header>
   );
