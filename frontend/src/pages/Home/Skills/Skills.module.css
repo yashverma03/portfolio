@@ -6,10 +6,30 @@
   @apply text-3xl font-semibold tracking-tight mb-6 text-neutral-100;
 }
 
+.categories {
+  @apply space-y-8;
+}
+
+.category {
+  @apply space-y-4;
+}
+
+.categoryTitle {
+  @apply text-xl font-medium text-neutral-200 mb-3;
+}
+
 .chips {
-  @apply flex flex-wrap gap-2;
+  @apply flex flex-wrap gap-3;
 }
 
 .chip {
-  @apply rounded-full bg-neutral-800 text-neutral-200 px-3 py-1 text-sm border border-neutral-700;
+  @apply flex items-center gap-2 rounded-lg bg-neutral-800 text-neutral-200 px-4 py-2 text-sm border border-neutral-700 hover:border-neutral-600 transition-colors;
+}
+
+.logo {
+  @apply w-5 h-5 object-contain;
+}
+
+.skillName {
+  @apply font-medium;
 }
