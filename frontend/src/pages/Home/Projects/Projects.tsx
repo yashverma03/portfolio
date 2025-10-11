@@ -22,7 +22,7 @@ const Projects = () => {
       <div className={styles.table}>
         {projects.map((project) => (
           <div key={project.name} className={styles.card}>
-            <h3 className='font-medium'>{project.name}</h3>
+            <h3 className={styles.projectName}>{project.name}</h3>
             <p className={styles.muted}>{project.desc}</p>
           </div>
         ))}

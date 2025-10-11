@@ -13,3 +13,19 @@
 .card {
   @apply rounded-lg border border-neutral-800 bg-neutral-800 p-4 hover:border-neutral-700 transition-colors;
 }
+
+.header {
+  @apply flex items-baseline justify-between gap-3;
+}
+
+.jobTitle {
+  @apply font-medium;
+}
+
+.date {
+  @apply text-sm text-neutral-400;
+}
+
+.description {
+  @apply mt-2 list-disc pl-5 text-neutral-300 space-y-1;
+}

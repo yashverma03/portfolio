@@ -12,9 +12,9 @@ const Certifications = () => {
       <div className={styles.list}>
         {certifications.map((certification) => (
           <div key={certification.name} className={styles.item}>
-            <div className='flex items-center justify-between'>
-              <span className='font-medium'>{certification.name}</span>
-              <span className='text-neutral-400 text-sm'>{certification.year}</span>
+            <div className={styles.header}>
+              <span className={styles.name}>{certification.name}</span>
+              <span className={styles.year}>{certification.year}</span>
             </div>
           </div>
         ))}

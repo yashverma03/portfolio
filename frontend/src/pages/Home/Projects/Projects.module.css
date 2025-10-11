@@ -17,3 +17,7 @@
 .muted {
   @apply text-neutral-300;
 }
+
+.projectName {
+  @apply font-medium;
+}

@@ -19,7 +19,7 @@ const Recommendations = () => {
         {recommendations.map((recommendation) => (
           <div key={recommendation.from} className={styles.card}>
             <p className={styles.muted}>&ldquo;{recommendation.text}&rdquo;</p>
-            <p className='mt-2 text-neutral-400 text-sm'>— {recommendation.from}</p>
+            <p className={styles.author}>— {recommendation.from}</p>
           </div>
         ))}
       </div>

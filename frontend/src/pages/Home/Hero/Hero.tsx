@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
-import avatar from '../../../assets/home/dp.png';
 
 const Hero = () => {
   return (
@@ -12,16 +11,15 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <p className={styles.muted}>Hi, I'm</p>
-          <h1 className='text-4xl md:text-5xl font-bold tracking-tight'>Yash Verma</h1>
-          <p className='mt-3 text-lg text-neutral-300'>Software Engineer</p>
-          <p className='mt-4 max-w-2xl text-neutral-300'>
-            I build robust web apps and platform features with a focus on security, payments, and
-            delightful UX. I enjoy shipping high-impact features end-to-end.
+          <h1 className={styles.title}>Yash Verma</h1>
+          <p className={styles.subtitle}>Software Engineer</p>
+          <p className={styles.description}>
+            I build robust backend systems with a focus on performance, security, and reliability. I
+            have experience designing secure authentication systems, payment integrations, real-time
+            dashboards, and AI-driven pipelines. I enjoy delivering high-impact solutions end-to-end
+            that power scalable web applications.
           </p>
         </motion.div>
-        <div className={styles.avatarWrap}>
-          <img src={avatar} alt='Yash Verma portrait' className={styles.avatar} />
-        </div>
       </div>
     </header>
   );

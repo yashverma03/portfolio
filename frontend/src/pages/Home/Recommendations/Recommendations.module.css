@@ -17,3 +17,7 @@
 .muted {
   @apply text-neutral-300;
 }
+
+.author {
+  @apply mt-2 text-neutral-400 text-sm;
+}
