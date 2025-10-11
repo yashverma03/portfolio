@@ -1,4 +1,6 @@
 import styles from './Contact.module.css';
+import emailIcon from '../../../assets/contact/email.svg';
+import whatsappIcon from '../../../assets/contact/whatsapp.svg';
 
 const Contact = () => {
   return (
@@ -6,7 +8,7 @@ const Contact = () => {
       <h2 className={styles.title}>Contact</h2>
       <div className={styles.contactCards}>
         <div className={styles.contactCard}>
-          <img src='/src/assets/contact/email.svg' alt='Email' className={styles.contactIcon} />
+          <img src={emailIcon} alt='Email' className={styles.contactIcon} />
           <div className={styles.contactInfo}>
             <h3 className={styles.contactLabel}>Email</h3>
             <a href='mailto:vermayash2003@gmail.com' className={styles.contactValue}>
@@ -15,11 +17,7 @@ const Contact = () => {
           </div>
         </div>
         <div className={styles.contactCard}>
-          <img
-            src='/src/assets/contact/whatsapp.svg'
-            alt='WhatsApp'
-            className={styles.contactIcon}
-          />
+          <img src={whatsappIcon} alt='WhatsApp' className={styles.contactIcon} />
           <div className={styles.contactInfo}>
             <h3 className={styles.contactLabel}>Phone</h3>
             <a

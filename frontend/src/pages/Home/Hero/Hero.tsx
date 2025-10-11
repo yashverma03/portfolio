@@ -1,4 +1,7 @@
 import styles from './Hero.module.css';
+import linkedinIcon from '../../../assets/hero/linkedin.svg';
+import googleDriveIcon from '../../../assets/hero/googleDrive.svg';
+import githubIcon from '../../../assets/hero/github.svg';
 
 const Hero = () => {
   return (
@@ -22,7 +25,7 @@ const Hero = () => {
               rel='noopener noreferrer'
               className={styles.ctaButton}
             >
-              <img src='/src/assets/hero/linkedin.svg' alt='LinkedIn' className={styles.ctaIcon} />
+              <img src={linkedinIcon} alt='LinkedIn' className={styles.ctaIcon} />
               LinkedIn
             </a>
             <a
@@ -31,7 +34,7 @@ const Hero = () => {
               rel='noopener noreferrer'
               className={styles.ctaButton}
             >
-              <img src='/src/assets/hero/googleDrive.svg' alt='Resume' className={styles.ctaIcon} />
+              <img src={googleDriveIcon} alt='Resume' className={styles.ctaIcon} />
               Resume
             </a>
             <a
@@ -40,7 +43,7 @@ const Hero = () => {
               rel='noopener noreferrer'
               className={styles.ctaButton}
             >
-              <img src='/src/assets/hero/github.svg' alt='GitHub' className={styles.ctaIcon} />
+              <img src={githubIcon} alt='GitHub' className={styles.ctaIcon} />
               GitHub
             </a>
           </div>

@@ -1,4 +1,6 @@
 import styles from './Projects.module.css';
+import externalLinkIcon from '../../../assets/projects/externalLink.svg';
+import githubIcon from '../../../assets/projects/github.svg';
 
 interface Project {
   name: string;
@@ -47,11 +49,7 @@ const Projects = () => {
                   rel='noopener noreferrer'
                   className={styles.link}
                 >
-                  <img
-                    src='/src/assets/projects/externalLink.svg'
-                    alt='Live Demo'
-                    className={styles.linkIcon}
-                  />
+                  <img src={externalLinkIcon} alt='Live Demo' className={styles.linkIcon} />
                   Live
                 </a>
                 <a
@@ -60,11 +58,7 @@ const Projects = () => {
                   rel='noopener noreferrer'
                   className={styles.link}
                 >
-                  <img
-                    src='/src/assets/projects/github.svg'
-                    alt='GitHub'
-                    className={styles.linkIcon}
-                  />
+                  <img src={githubIcon} alt='GitHub' className={styles.linkIcon} />
                   GitHub
                 </a>
               </div>
