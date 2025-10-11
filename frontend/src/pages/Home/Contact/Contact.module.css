@@ -6,6 +6,26 @@
   @apply text-3xl font-semibold tracking-tight mb-6 text-neutral-100;
 }
 
-.muted {
-  @apply text-neutral-300;
+.contactCards {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.contactCard {
+  @apply flex items-center gap-4 p-6 rounded-lg border border-neutral-800 bg-neutral-800 hover:border-neutral-700 hover:bg-neutral-800 transition-all duration-200;
+}
+
+.contactIcon {
+  @apply w-8 h-8 flex-shrink-0;
+}
+
+.contactInfo {
+  @apply flex-1;
+}
+
+.contactLabel {
+  @apply text-sm font-medium text-neutral-400 mb-1;
+}
+
+.contactValue {
+  @apply text-neutral-200 font-medium select-text hover:text-blue-400 transition-colors duration-200;
 }

@@ -1,40 +1,4 @@
 /* Page container and common section spacing */
 .page {
-  @apply min-h-screen bg-neutral-900 text-neutral-100;
-}
-
-.section {
-  @apply max-w-5xl mx-auto px-6 py-16;
-}
-
-.sectionTitle {
-  @apply text-3xl font-semibold tracking-tight mb-6 text-neutral-100;
-}
-
-.muted {
-  @apply text-neutral-300;
-}
-
-.gridTwoCol {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-8;
-}
-
-.chips {
-  @apply flex flex-wrap gap-2;
-}
-
-.chip {
-  @apply rounded-full bg-neutral-800 text-neutral-200 px-3 py-1 text-sm border border-neutral-700;
-}
-
-.card {
-  @apply rounded-lg border border-neutral-800 bg-neutral-800 p-4 hover:border-neutral-700 transition-colors;
-}
-
-.list {
-  @apply space-y-3;
-}
-
-.footer {
-  @apply border-t border-neutral-800 py-10 text-center text-neutral-400;
+  @apply min-h-screen bg-neutral-900 text-neutral-100 pb-[100px];
 }

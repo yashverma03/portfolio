@@ -4,10 +4,9 @@ import Hero from './Hero/Hero.tsx';
 import WorkExperience from './WorkExperience/WorkExperience.tsx';
 import Skills from './Skills/Skills.tsx';
 import Projects from './Projects/Projects.tsx';
-import Certifications from './Certifications/Certifications.tsx';
+// import Certifications from './Certifications/Certifications.tsx';
 import Contact from './Contact/Contact.tsx';
 import Education from './Education/Education.tsx';
-import Recommendations from './Recommendations/Recommendations.tsx';
 
 const Home = () => {
   return (
@@ -17,9 +16,9 @@ const Home = () => {
       <WorkExperience />
       <Skills />
       <Projects />
-      <Certifications />
+      {/* TODO: Add Later */}
+      {/* <Certifications /> */}
       <Education />
-      <Recommendations />
       <Contact />
     </div>
   );

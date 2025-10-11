@@ -4,23 +4,23 @@ interface Experience {
   title: string;
   company: string;
   date: string;
-  points: string;
+  description: string;
 }
 
 const experiences: Experience[] = [
   {
     title: 'Software Engineer',
     company: 'Oats Tech',
-    date: 'Apr 2025 – Present',
-    points: `• Integrated Nuvei’s Merchant Initiated Transactions (MIT) for subscription payments, scheduled 3 business days in advance, with a custom failed-transaction retry logic, reducing payment failures by 15%
+    date: 'Apr 2025 – Present (6 months)',
+    description: `• Integrated Nuvei’s Merchant Initiated Transactions (MIT) for subscription payments, scheduled 3 business days in advance, with a custom failed-transaction retry logic, reducing payment failures by 15%
 • Automated a file synchronization pipeline where dashboard file uploads are stored and synced to an AI-context data source, leading to a 90% improvement in AI response relevance
 • Integrated Stripe’s subscription billing and implemented a tiered access system where users can interact with the AI based on usage limits defined by their subscribed plan, reducing AI overuse incidents by 40%`
   },
   {
     title: 'Junior Software Engineer',
     company: 'Oats Tech',
-    date: 'Mar 2024 – Mar 2025',
-    points: `• Integrated Trustmatic’s IDV APIs for remote identity verification and developed webhook listeners for real-time status updates, automating tenant approval process and boosting operational efficiency by 56%
+    date: 'Mar 2024 – Mar 2025 (1 year)',
+    description: `• Integrated Trustmatic’s IDV APIs for remote identity verification and developed webhook listeners for real-time status updates, automating tenant approval process and boosting operational efficiency by 56%
 • Developed a strong security system for tenants and managers, featuring multi-factor authentication (MFA) via SMS and email using secure HTTPS-only cookies, login retry restrictions, API rate limiting, and Google reCAPTCHA — resulting in a 80% reduction in brute-force attacks
 • Developed a white-label architecture where each company accesses its own tenant portal with unique branding, improving customer retention by 20% through enhanced personalization
 • Implemented OAuth2-based social login, enabling seamless authentication via Google, Apple, Microsoft, and Facebook to enhance user onboarding experience and reduce login friction by 45%
@@ -34,8 +34,8 @@ const experiences: Experience[] = [
   {
     title: 'Software Engineer Intern',
     company: 'Oats Tech',
-    date: 'Sep 2023 – Mar 2024',
-    points: `• Engineered an admin dashboard with a  Content Management System (CMS) to manage website content and assets, reducing manual administrative task time by 52%
+    date: 'Sep 2023 – Mar 2024 (6 months)',
+    description: `• Engineered an admin dashboard with a  Content Management System (CMS) to manage website content and assets, reducing manual administrative task time by 52%
 • Built a customizable kitchen layout configurator that generated real-time design previews and pricing based on user preferences, improving visualization clarity and boosting user engagement by 47%
 • Optimized API efficiency using TanStack Query's caching mechanism, cutting down redundant network requests and achieving a 15% reduction in AWS EC2 costs
 • Optimized performance using lazy loading techniques and reducing initial page load time by up to 27%`
@@ -63,7 +63,7 @@ const WorkExperience = () => {
               <span className={styles.date}>{exp.date}</span>
             </div>
             <ul className={styles.description}>
-              {exp.points
+              {exp.description
                 .split('\n')
                 .filter(Boolean)
                 .map((point, i) => (
