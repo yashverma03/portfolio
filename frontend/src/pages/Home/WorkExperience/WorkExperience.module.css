@@ -29,3 +29,14 @@
 .description {
   @apply mt-2 list-disc pl-5 text-neutral-300 space-y-1;
 }
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  .header {
+    @apply flex-col;
+  }
+
+  .date {
+    @apply mb-[10px];
+  }
+}
