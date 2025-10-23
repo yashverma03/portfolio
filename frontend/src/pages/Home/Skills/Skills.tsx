@@ -5,6 +5,7 @@ import cypressLogo from '../../../assets/skills/cypress.svg';
 import javascriptLogo from '../../../assets/skills/javascript.svg';
 import typescriptLogo from '../../../assets/skills/typescript.svg';
 import nodeJsLogo from '../../../assets/skills/nodejs.png';
+import pythonLogo from '../../../assets/skills/python.svg';
 import nestJsLogo from '../../../assets/skills/nestjs.svg';
 import expressJsLogo from '../../../assets/skills/expressjs.png';
 import redisLogo from '../../../assets/skills/redis.svg';
@@ -33,20 +34,13 @@ interface SkillCategory {
 const Skills = () => {
   const skillCategories: SkillCategory[] = [
     {
-      name: 'Frontend',
-      skills: [
-        { name: 'React.js', logo: reactLogo },
-        { name: 'Tailwind CSS', logo: tailwindCssLogo },
-        { name: 'Cypress', logo: cypressLogo }
-      ]
-    },
-    {
       name: 'Backend',
       skills: [
         { name: 'JavaScript', logo: javascriptLogo },
         { name: 'TypeScript', logo: typescriptLogo },
         { name: 'Node.js', logo: nodeJsLogo },
-        { name: 'Nest.js', logo: nestJsLogo },
+        { name: 'Python', logo: pythonLogo },
+        { name: 'NestJS', logo: nestJsLogo },
         { name: 'Express.js', logo: expressJsLogo },
         { name: 'Redis', logo: redisLogo },
         { name: 'Kafka', logo: kafkaLogo },
@@ -70,6 +64,14 @@ const Skills = () => {
         { name: 'AWS', logo: awsLogo },
         { name: 'Docker', logo: dockerLogo },
         { name: 'Kubernetes', logo: kubernetesLogo }
+      ]
+    },
+    {
+      name: 'Frontend',
+      skills: [
+        { name: 'React.js', logo: reactLogo },
+        { name: 'Tailwind CSS', logo: tailwindCssLogo },
+        { name: 'Cypress', logo: cypressLogo }
       ]
     }
   ];
