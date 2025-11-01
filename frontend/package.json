@@ -11,6 +11,8 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "dayjs": "^1.11.19",
+    "decimal.js": "^10.6.0",
     "framer-motion": "^12.23.23",
     "react": "^19.1.1",
     "react-click-away-listener": "^2.4.0",
