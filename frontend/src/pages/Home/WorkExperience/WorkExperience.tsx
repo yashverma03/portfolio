@@ -16,12 +16,14 @@ const experiences: Experience[] = [
     company: 'Oats Tech',
     startDate: '01 Apr 2025',
     endDate: null, // Present
-    description: `• Integrated Nuvei's Merchant Initiated Transactions (MIT) for subscription payments, scheduled 3 business days in advance, with a custom failed-transaction retry logic, reducing payment failures by 15%
-• Designed a gamified points and rewards system to incentivize user referrals, payments, subscriptions and enabling gift cards and rent credit redemptions in future payments, increasing monthly active users (MAUs) by 35%
-• Optimized a background data processing pipeline by 10 times, enabling efficient ingestion, normalization, and consolidation of payment data from Central 1, Telpay, and Nuvei, and delivering accurate Convera payout files for reconciliation
+    description: `• Integrated Nuvei’s Merchant Initiated Transactions (MIT) for subscription payments, scheduled 3 business days in advance, with a custom failed-transaction retry logic, processing over $500K+ monthly transactions
+• Designed a points and rewards system to incentivize user referrals, payments, subscriptions and enabling gift cards and rent credit redemptions in future payments, increasing monthly active users (MAUs) by 35%
+• Optimized a background data processing pipeline, achieving a 10 times reduction in processing time, enabling efficient ingestion, normalization, and consolidation of payment data from Central 1, Telpay, and Nuvei, and delivering accurate Convera payout files for reconciliation
+• Automated a file synchronization pipeline to seamlessly ingest and sync dashboard uploads from external sources into an AI-context data repository, resulting in a 90% improvement in AI response relevance
+• Integrated Intuit QuickBooks onboarding with OAuth in TenantPay, enabling automated customer and transaction sync, reducing manual accounting workload by 60%
+• Integrated Stripe’s subscription billing and implemented a tiered access system where users can interact with the AI based on usage limits defined by their subscribed plan, reducing AI overuse incidents by 40%
 • Implemented Single Sign-On (SSO) integration allowing TenantPay users to seamlessly access Equifax to view credit scores, reducing the number of steps to access credit data by 40%
-• Automated a file synchronization pipeline to seamlessly ingest and sync dashboard uploads from external sources into an AI-context data repository, resulting in a 90% improvement in AI response relevance and accuracy
-• Integrated Stripe's subscription billing and implemented a tiered access system where users can interact with the AI based on usage limits defined by their subscribed plan, reducing AI overuse incidents by 40%
+
 `
   },
   {
@@ -29,11 +31,13 @@ const experiences: Experience[] = [
     company: 'Oats Tech',
     startDate: '19 Mar 2024',
     endDate: '31 Mar 2025',
-    description: `• Integrated Trustmatic's IDV APIs for remote identity verification with real-time status updates, automating tenant approval process and boosting operational efficiency by 56%
+    description: `
+    • Integrated Trustmatic’s IDV APIs for remote identity verification with real-time status updates, automating tenant approval process and boosting operational efficiency by 56%
 • Developed a white-label architecture where each company accesses its own tenant portal with unique branding, improving customer retention by 20% through enhanced personalization
 • Implemented OAuth2-based social login, enabling seamless authentication via Google, Apple, Microsoft, and Facebook to enhance user onboarding experience and reduce login friction by 45%
 • Engineered an alerting mechanism to track potentially fraudulent landlord transactions using KYC insights and client risk assessment reports, reducing manual review efforts by 63%
 • Implemented real-time chat functionality using Socket.io, enabling instant bi-directional communication between car owners and garage owners, improving service coordination by 24%
+
 `
   },
   {
