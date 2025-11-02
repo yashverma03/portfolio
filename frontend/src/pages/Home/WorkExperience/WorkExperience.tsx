@@ -105,7 +105,7 @@ const WorkExperience = () => {
 
   const cleanPoint = (point: string) => {
     return point
-      .replace(/^•\s*/, '') // remove leading bullet
+      .replace(/•/, '') // remove bullet
       .replace(/\.{2,}/g, '.') // replace multiple dots with one
       .trim(); // remove extra spaces
   };
