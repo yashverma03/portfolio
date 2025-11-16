@@ -5,6 +5,7 @@ import cypressLogo from '../../../assets/skills/cypress.svg';
 import javascriptLogo from '../../../assets/skills/javascript.svg';
 import typescriptLogo from '../../../assets/skills/typescript.svg';
 import nodeJsLogo from '../../../assets/skills/nodejs.png';
+import javaLogo from '../../../assets/skills/java.png';
 import pythonLogo from '../../../assets/skills/python.svg';
 import djangoLogo from '../../../assets/skills/django.png';
 import nestJsLogo from '../../../assets/skills/nestjs.svg';
@@ -40,6 +41,7 @@ const Skills = () => {
         { name: 'JavaScript', logo: javascriptLogo },
         { name: 'TypeScript', logo: typescriptLogo },
         { name: 'Node.js', logo: nodeJsLogo },
+        { name: 'Java', logo: javaLogo },
         { name: 'Python', logo: pythonLogo },
         { name: 'Django', logo: djangoLogo },
         { name: 'NestJS', logo: nestJsLogo },
