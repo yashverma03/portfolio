@@ -14,7 +14,7 @@ const Hero = () => {
           <p className={styles.location}>Delhi, India</p>
           <p className={styles.description}>
             I build robust backend systems with a focus on performance, security, and reliability. I
-            have around 2 years of experience designing secure authentication systems, payment
+            have 2 years of experience designing secure authentication systems, payment
             integrations, real-time dashboards, and AI-driven pipelines. I enjoy delivering
             high-impact solutions end-to-end that power scalable web applications.
           </p>
