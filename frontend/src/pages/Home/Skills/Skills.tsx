@@ -1,27 +1,29 @@
 import styles from './Skills.module.css';
-import reactLogo from '../../../assets/skills/react.svg';
-import tailwindCssLogo from '../../../assets/skills/tailwind.svg';
-import cypressLogo from '../../../assets/skills/cypress.svg';
-import javascriptLogo from '../../../assets/skills/javascript.svg';
-import typescriptLogo from '../../../assets/skills/typescript.svg';
-import nodeJsLogo from '../../../assets/skills/nodejs.png';
 import javaLogo from '../../../assets/skills/java.png';
 import pythonLogo from '../../../assets/skills/python.svg';
+import javascriptLogo from '../../../assets/skills/javascript.svg';
+import typescriptLogo from '../../../assets/skills/typescript.svg';
+import cPlusPlusLogo from '../../../assets/skills/cpp.svg';
+import springBootLogo from '../../../assets/skills/springboot.svg';
+import hibernateLogo from '../../../assets/skills/hibernate.svg';
 import djangoLogo from '../../../assets/skills/django.png';
+import nodeJsLogo from '../../../assets/skills/nodejs.png';
 import nestJsLogo from '../../../assets/skills/nestjs.svg';
 import expressJsLogo from '../../../assets/skills/expressjs.png';
-import redisLogo from '../../../assets/skills/redis.svg';
-import kafkaLogo from '../../../assets/skills/kafka.svg';
-import cPlusPlusLogo from '../../../assets/skills/cpp.svg';
-import jestLogo from '../../../assets/skills/jest.svg';
 import postgresqlLogo from '../../../assets/skills/postgresql.svg';
 import mySqlLogo from '../../../assets/skills/mysql.svg';
 import mongoDbLogo from '../../../assets/skills/mongodb.svg';
-import linuxLogo from '../../../assets/skills/linux.svg';
-import gitLogo from '../../../assets/skills/git.svg';
 import awsLogo from '../../../assets/skills/aws.svg';
 import dockerLogo from '../../../assets/skills/docker.svg';
 import kubernetesLogo from '../../../assets/skills/kubernetes.svg';
+import linuxLogo from '../../../assets/skills/linux.svg';
+import gitLogo from '../../../assets/skills/git.svg';
+import redisLogo from '../../../assets/skills/redis.svg';
+import kafkaLogo from '../../../assets/skills/kafka.svg';
+import jestLogo from '../../../assets/skills/jest.svg';
+import cypressLogo from '../../../assets/skills/cypress.svg';
+import reactLogo from '../../../assets/skills/react.svg';
+import tailwindCssLogo from '../../../assets/skills/tailwind.svg';
 
 interface Skill {
   name: string;
@@ -36,24 +38,28 @@ interface SkillCategory {
 const Skills = () => {
   const skillCategories: SkillCategory[] = [
     {
-      name: 'Backend',
+      name: 'Languages',
       skills: [
-        { name: 'JavaScript', logo: javascriptLogo },
-        { name: 'TypeScript', logo: typescriptLogo },
-        { name: 'Node.js', logo: nodeJsLogo },
         { name: 'Java', logo: javaLogo },
         { name: 'Python', logo: pythonLogo },
-        { name: 'Django', logo: djangoLogo },
-        { name: 'NestJS', logo: nestJsLogo },
-        { name: 'Express.js', logo: expressJsLogo },
-        { name: 'Redis', logo: redisLogo },
-        { name: 'Kafka', logo: kafkaLogo },
-        { name: 'C++', logo: cPlusPlusLogo },
-        { name: 'Jest', logo: jestLogo }
+        { name: 'JavaScript', logo: javascriptLogo },
+        { name: 'TypeScript', logo: typescriptLogo },
+        { name: 'C++', logo: cPlusPlusLogo }
       ]
     },
     {
-      name: 'Database',
+      name: 'Backend',
+      skills: [
+        { name: 'Spring Boot', logo: springBootLogo },
+        { name: 'Hibernate', logo: hibernateLogo },
+        { name: 'Django', logo: djangoLogo },
+        { name: 'Node.js', logo: nodeJsLogo },
+        { name: 'NestJS', logo: nestJsLogo },
+        { name: 'Express.js', logo: expressJsLogo }
+      ]
+    },
+    {
+      name: 'Databases',
       skills: [
         { name: 'PostgreSQL', logo: postgresqlLogo },
         { name: 'MySQL', logo: mySqlLogo },
@@ -63,19 +69,27 @@ const Skills = () => {
     {
       name: 'DevOps',
       skills: [
-        { name: 'Linux', logo: linuxLogo },
-        { name: 'Git', logo: gitLogo },
         { name: 'AWS', logo: awsLogo },
         { name: 'Docker', logo: dockerLogo },
-        { name: 'Kubernetes', logo: kubernetesLogo }
+        { name: 'Kubernetes', logo: kubernetesLogo },
+        { name: 'Linux', logo: linuxLogo },
+        { name: 'Git', logo: gitLogo }
+      ]
+    },
+    {
+      name: 'Tools',
+      skills: [
+        { name: 'Redis', logo: redisLogo },
+        { name: 'Kafka', logo: kafkaLogo },
+        { name: 'Jest', logo: jestLogo },
+        { name: 'Cypress', logo: cypressLogo }
       ]
     },
     {
       name: 'Frontend',
       skills: [
         { name: 'React.js', logo: reactLogo },
-        { name: 'Tailwind CSS', logo: tailwindCssLogo },
-        { name: 'Cypress', logo: cypressLogo }
+        { name: 'Tailwind CSS', logo: tailwindCssLogo }
       ]
     }
   ];
