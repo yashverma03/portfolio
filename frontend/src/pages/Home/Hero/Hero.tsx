@@ -2,6 +2,7 @@ import styles from './Hero.module.css';
 import linkedinIcon from '../../../assets/hero/linkedin.svg';
 import googleDriveIcon from '../../../assets/hero/googleDrive.svg';
 import githubIcon from '../../../assets/hero/github.svg';
+import { trackClick } from '../../../utils/analytics';
 
 const Hero = () => {
   return (
@@ -24,6 +25,7 @@ const Hero = () => {
               target='_blank'
               rel='noopener noreferrer'
               className={styles.ctaButton}
+              onClick={() => trackClick('linkedin')}
             >
               <img src={linkedinIcon} alt='LinkedIn' className={styles.ctaIcon} />
               LinkedIn
@@ -33,6 +35,7 @@ const Hero = () => {
               target='_blank'
               rel='noopener noreferrer'
               className={styles.ctaButton}
+              onClick={() => trackClick('resume')}
             >
               <img src={googleDriveIcon} alt='Resume' className={styles.ctaIcon} />
               Resume
@@ -42,6 +45,7 @@ const Hero = () => {
               target='_blank'
               rel='noopener noreferrer'
               className={styles.ctaButton}
+              onClick={() => trackClick('github')}
             >
               <img src={githubIcon} alt='GitHub' className={styles.ctaIcon} />
               GitHub

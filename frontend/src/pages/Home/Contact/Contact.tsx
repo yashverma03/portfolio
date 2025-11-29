@@ -1,6 +1,7 @@
 import styles from './Contact.module.css';
 import emailIcon from '../../../assets/contact/email.svg';
 import whatsappIcon from '../../../assets/contact/whatsapp.svg';
+import { trackClick } from '../../../utils/analytics';
 
 const Contact = () => {
   return (
@@ -11,7 +12,11 @@ const Contact = () => {
           <img src={emailIcon} alt='Email' className={styles.contactIcon} />
           <div className={styles.contactInfo}>
             <h3 className={styles.contactLabel}>Email</h3>
-            <a href='mailto:vermayash2003@gmail.com' className={styles.contactValue}>
+            <a
+              href='mailto:vermayash2003@gmail.com'
+              className={styles.contactValue}
+              onClick={() => trackClick('contact', 'email')}
+            >
               vermayash2003@gmail.com
             </a>
           </div>
@@ -25,6 +30,7 @@ const Contact = () => {
               target='_blank'
               rel='noopener noreferrer'
               className={styles.contactValue}
+              onClick={() => trackClick('contact', 'phone')}
             >
               +91 8130957794
             </a>

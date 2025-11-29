@@ -1,6 +1,7 @@
 import styles from './Projects.module.css';
 import externalLinkIcon from '../../../assets/projects/externalLink.svg';
 import githubIcon from '../../../assets/projects/github.svg';
+import { trackClick } from '../../../utils/analytics';
 
 interface Project {
   name: string;
@@ -48,6 +49,7 @@ const Projects = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                   className={styles.link}
+                  onClick={() => trackClick('project_live', project.name)}
                 >
                   <img src={externalLinkIcon} alt='Live Demo' className={styles.linkIcon} />
                   Live
@@ -57,6 +59,7 @@ const Projects = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                   className={styles.link}
+                  onClick={() => trackClick('project_github', project.name)}
                 >
                   <img src={githubIcon} alt='GitHub' className={styles.linkIcon} />
                   GitHub
