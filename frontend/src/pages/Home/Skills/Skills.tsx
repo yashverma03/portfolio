@@ -24,6 +24,7 @@ import jestLogo from '../../../assets/skills/jest.svg';
 import cypressLogo from '../../../assets/skills/cypress.svg';
 import reactLogo from '../../../assets/skills/react.svg';
 import tailwindCssLogo from '../../../assets/skills/tailwind.svg';
+import githubActionsLogo from '../../../assets/skills/github-actions.svg';
 
 interface Skill {
   name: string;
@@ -73,11 +74,12 @@ const Skills = () => {
         { name: 'Docker', logo: dockerLogo },
         { name: 'Kubernetes', logo: kubernetesLogo },
         { name: 'Linux', logo: linuxLogo },
-        { name: 'Git', logo: gitLogo }
+        { name: 'Git', logo: gitLogo },
+        { name: 'GitHub Actions', logo: githubActionsLogo }
       ]
     },
     {
-      name: 'Tools',
+      name: 'Other',
       skills: [
         { name: 'Redis', logo: redisLogo },
         { name: 'Kafka', logo: kafkaLogo },
