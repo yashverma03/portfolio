@@ -11,17 +11,25 @@
 }
 
 .item {
-  @apply rounded-lg border border-neutral-800 bg-neutral-800 p-4;
+  @apply rounded-lg border border-neutral-800 bg-neutral-800 p-4 flex items-center gap-4 transition-all duration-200 hover:border-neutral-700;
 }
 
-.header {
-  @apply flex items-center justify-between;
+.logo {
+  @apply w-24 h-24 flex-shrink-0 rounded object-contain;
+}
+
+.content {
+  @apply flex flex-col justify-center flex-1;
 }
 
 .name {
-  @apply font-medium;
+  @apply font-medium text-neutral-100 block;
 }
 
-.year {
-  @apply text-neutral-400 text-sm;
+.link {
+  @apply inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 bg-blue-600 text-white hover:bg-blue-700 hover:shadow-md hover:shadow-blue-500/25 flex-shrink-0;
+}
+
+.linkIcon {
+  @apply w-4 h-4;
 }

@@ -110,7 +110,7 @@ const WorkExperience = () => {
 
   return (
     <section id='experience' className={styles.root}>
-      <h2 className={styles.title}>Work Experience</h2>
+      <h2 className={styles.title}>Experience</h2>
       <div className={styles.list}>
         {experiences.map((exp, idx) => (
           <div key={idx} className={styles.card}>

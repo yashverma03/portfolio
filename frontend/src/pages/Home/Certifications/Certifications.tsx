@@ -1,9 +1,14 @@
+import awsLogo from '../../../assets/certifications/cloudPractitioner.png';
+import externalLinkIcon from '../../../assets/projects/externalLink.svg';
 import styles from './Certifications.module.css';
 
 const Certifications = () => {
   const certifications = [
-    { name: 'AWS Certified Cloud Practitioner (Sample)', year: '2024' },
-    { name: 'Kubernetes (CKAD) (Sample)', year: '2023' }
+    {
+      name: 'AWS Certified Cloud Practitioner',
+      logo: awsLogo,
+      link: 'https://www.credly.com/badges/dd17cbec-5638-40f9-bd2a-7953c45507d8/public_url'
+    }
   ];
 
   return (
@@ -12,10 +17,21 @@ const Certifications = () => {
       <div className={styles.list}>
         {certifications.map((certification) => (
           <div key={certification.name} className={styles.item}>
-            <div className={styles.header}>
+            {certification.logo && (
+              <img src={certification.logo} alt={certification.name} className={styles.logo} />
+            )}
+            <div className={styles.content}>
               <span className={styles.name}>{certification.name}</span>
-              <span className={styles.year}>{certification.year}</span>
             </div>
+            <a
+              href={certification.link}
+              target='_blank'
+              rel='noopener noreferrer'
+              className={styles.link}
+            >
+              <img src={externalLinkIcon} alt='View Credential' className={styles.linkIcon} />
+              View Credential
+            </a>
           </div>
         ))}
       </div>

@@ -4,8 +4,9 @@ import Navbar from '../../components/Navbar/Navbar.tsx';
 import Hero from './Hero/Hero.tsx';
 import WorkExperience from './WorkExperience/WorkExperience.tsx';
 import Skills from './Skills/Skills.tsx';
-import Projects from './Projects/Projects.tsx';
+// import Projects from './Projects/Projects.tsx';
 import Contact from './Contact/Contact.tsx';
+import Certifications from './Certifications/Certifications.tsx';
 import Education from './Education/Education.tsx';
 
 const animationProps = {
@@ -34,8 +35,11 @@ const Home = () => {
       <motion.div {...animationProps}>
         <Skills />
       </motion.div>
-      <motion.div {...animationProps}>
+      {/* <motion.div {...animationProps}>
         <Projects />
+      </motion.div> */}
+      <motion.div {...animationProps}>
+        <Certifications />
       </motion.div>
       <motion.div {...animationProps}>
         <Education />
