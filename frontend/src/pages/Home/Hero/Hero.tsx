@@ -14,10 +14,9 @@ const Hero = () => {
           <p className={styles.subtitle}>Software Engineer</p>
           <p className={styles.location}>Delhi, India</p>
           <p className={styles.description}>
-            I build robust backend systems with a focus on performance, security, and reliability. I
-            have 2 years of experience designing secure authentication systems, payment
-            integrations, real-time dashboards, and AI-driven pipelines. I enjoy delivering
-            high-impact solutions end-to-end that power scalable web applications.
+            I am a Software Engineer at Oats Tech with 2.5 years of experience specializing in
+            backend development, building scalable cloud-native SaaS platforms and payment systems.
+            I build robust backend systems with a focus on performance, security, and reliability.
           </p>
           <div className={styles.ctaButtons}>
             <a
