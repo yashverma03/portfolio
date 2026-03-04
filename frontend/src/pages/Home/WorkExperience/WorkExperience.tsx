@@ -17,10 +17,10 @@ const experiences: Experience[] = [
     startDate: '01 Apr 2025',
     endDate: null, // Present
     description: `
-• Architected secure and compliant banking payment systems integrating RBC PAD and PDS with custom payment verification and message queue driven asynchronous processing for bulk payments, payouts, and reconciliation, reducing manual finance operations by 40% and processing fees by 15%.
-• Built a highly available, event-driven subscription payment system integrating two payment processors (Nuvei and RBC), processing $500K+ monthly with early payment options and custom failed-payment retry logic
+• Architected secure banking payment systems integrating RBC PAD and PDS with message queue driven asynchronous processing for bulk payments and reconciliation, handling $1B+ in annual transactions
+• Built a highly available, event-driven subscription system integrating two payment processors, handling $500K+ in monthly volume with idempotent processing, custom retry logic and early payment options
 • Designed and built a scalable points & rewards system for referrals, payments, and subscriptions, enabling gift cards and rent-credit redemptions, increasing MAUs by 35%.
-• Optimized a fault tolerant background data processing pipeline, reducing processing time from 4 hours to 30 minutes, enabling efficient ingestion, normalization, and consolidation of payment data from Central 1, Telpay, and Nuvei, and delivering accurate Convera payout files for reconciliation
+• Optimized a fault tolerant background data processing pipeline ingesting from 4 sources, reducing processing time from 4 hours to 30 minutes and enabling schema standardization and multi-source data consolidation
 • Implemented Intuit QuickBooks onboarding with OAuth in TenantPay, enabling automated customer and transaction sync, reducing manual accounting effort by 60%
 
 `
@@ -31,11 +31,11 @@ const experiences: Experience[] = [
     startDate: '19 Mar 2024',
     endDate: '31 Mar 2025',
     description: `
-• Built a compliant KYC system for remote identity verification with real-time status updates, automating tenant onboarding and reducing manual review effort by 56%
+• Built a compliant KYC system for remote identity verification with real-time status updates in an Agile development environment, automating tenant onboarding and reducing manual review effort by 56%
 • Integrated Stripe’s subscription billing and implemented a tiered access system where users can interact with the AI based on usage limits defined by their subscribed plan, reducing AI overuse incidents by 40%
-• Implemented OAuth2-based social logins (Google, Apple, Microsoft, Facebook) and built SSO integration between TenantPay and Equifax, enabling cross-platform access and reducing login friction by 45%
-• Engineered an alerting mechanism to track potentially fraudulent landlord transactions using KYC insights and client risk assessment reports, reducing manual review efforts by 63%
-• Implemented real-time chat functionality using Socket.io, enabling instant bi-directional communication between car owners and garage owners, improving service coordination by 24%
+• Implemented OAuth2-based social logins (Google, Apple, Microsoft, Facebook) and built SSO integration between TenantPay and Equifax, enabling seamless cross-platform access for 5K+ users
+• Deployed highly available, scalable infrastructure on AWS (EKS, EC2, RDS, S3, IAM), achieving 99.9% uptime
+• Automated CI/CD pipelines for containerized applications across two environments, integrating automated build and test workflows, reducing change failure rate by 35% and improving deployment reliability
 
 `
   },
@@ -45,7 +45,8 @@ const experiences: Experience[] = [
     startDate: '18 Sep 2023',
     endDate: '18 Mar 2024',
     description: `
-• Engineered a multilingual admin dashboard with a Content Management System (CMS) to manage website content and assets, reducing manual administrative task time by 52%`
+• Engineered a multilingual admin dashboard with a Content Management System (CMS) to manage website content and assets, reducing API latency from 2 seconds to 300 ms by implementing caching
+`
   }
 ];
 
