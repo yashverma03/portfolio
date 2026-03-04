@@ -3,7 +3,6 @@ import javaLogo from '../../../assets/skills/java.png';
 import pythonLogo from '../../../assets/skills/python.svg';
 import javascriptLogo from '../../../assets/skills/javascript.svg';
 import typescriptLogo from '../../../assets/skills/typescript.svg';
-import cPlusPlusLogo from '../../../assets/skills/cpp.svg';
 import springBootLogo from '../../../assets/skills/springboot.svg';
 import hibernateLogo from '../../../assets/skills/hibernate.svg';
 import djangoLogo from '../../../assets/skills/django.png';
@@ -20,10 +19,7 @@ import linuxLogo from '../../../assets/skills/linux.svg';
 import gitLogo from '../../../assets/skills/git.svg';
 import redisLogo from '../../../assets/skills/redis.svg';
 import kafkaLogo from '../../../assets/skills/kafka.svg';
-import jestLogo from '../../../assets/skills/jest.svg';
-import cypressLogo from '../../../assets/skills/cypress.svg';
 import reactLogo from '../../../assets/skills/react.svg';
-import tailwindCssLogo from '../../../assets/skills/tailwind.svg';
 import githubActionsLogo from '../../../assets/skills/github-actions.svg';
 
 interface Skill {
@@ -44,8 +40,7 @@ const Skills = () => {
         { name: 'Java', logo: javaLogo },
         { name: 'Python', logo: pythonLogo },
         { name: 'JavaScript', logo: javascriptLogo },
-        { name: 'TypeScript', logo: typescriptLogo },
-        { name: 'C++', logo: cPlusPlusLogo }
+        { name: 'TypeScript', logo: typescriptLogo }
       ]
     },
     {
@@ -82,17 +77,12 @@ const Skills = () => {
       name: 'Other',
       skills: [
         { name: 'Redis', logo: redisLogo },
-        { name: 'Kafka', logo: kafkaLogo },
-        { name: 'Jest', logo: jestLogo },
-        { name: 'Cypress', logo: cypressLogo }
+        { name: 'Kafka', logo: kafkaLogo }
       ]
     },
     {
       name: 'Frontend',
-      skills: [
-        { name: 'React.js', logo: reactLogo },
-        { name: 'Tailwind CSS', logo: tailwindCssLogo }
-      ]
+      skills: [{ name: 'React.js', logo: reactLogo }]
     }
   ];
 
