@@ -21,6 +21,7 @@ import redisLogo from '../../../assets/skills/redis.svg';
 import kafkaLogo from '../../../assets/skills/kafka.svg';
 import reactLogo from '../../../assets/skills/react.svg';
 import githubActionsLogo from '../../../assets/skills/github-actions.svg';
+import cPlusPlusLogo from '../../../assets/skills/cpp.svg';
 
 interface Skill {
   name: string;
@@ -40,7 +41,8 @@ const Skills = () => {
         { name: 'Java', logo: javaLogo },
         { name: 'Python', logo: pythonLogo },
         { name: 'JavaScript', logo: javascriptLogo },
-        { name: 'TypeScript', logo: typescriptLogo }
+        { name: 'TypeScript', logo: typescriptLogo },
+        { name: 'C++', logo: cPlusPlusLogo }
       ]
     },
     {
