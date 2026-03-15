@@ -34,7 +34,7 @@ const experiences: Experience[] = [
 • Built a compliant KYC system for remote identity verification with real-time status updates in an Agile development environment, automating tenant onboarding and reducing manual review effort by 56%
 • Integrated Stripe’s subscription billing and implemented a tiered access system where users can interact with the AI based on usage limits defined by their subscribed plan, reducing AI overuse incidents by 40%
 • Implemented OAuth2-based social logins (Google, Apple, Microsoft, Facebook) and built SSO integration between TenantPay and Equifax, enabling seamless cross-platform access for 5K+ users
-• Deployed highly available, scalable infrastructure on AWS (EKS, EC2, RDS, S3, IAM), achieving 99.9% uptime
+• Deployed 4 highly available, scalable services on AWS (EKS, EC2, RDS, S3, IAM), achieving 99.9% uptime
 • Automated CI/CD pipelines for containerized applications across two environments, integrating automated build and test workflows, reducing change failure rate by 35% and improving deployment reliability
 
 `
