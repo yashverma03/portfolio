@@ -19,9 +19,9 @@ const experiences: Experience[] = [
     description: `
 • Architected secure banking payment systems integrating RBC PAD and PDS with message queue driven asynchronous processing for bulk payments and reconciliation, handling $1B+ in annual transactions
 • Built a highly available, event-driven subscription system integrating two payment processors, handling $500K+ in monthly volume with idempotent processing, custom retry logic and early payment options
-• Designed and built a scalable points & rewards system for referrals, payments, and subscriptions, enabling gift cards and rent-credit redemptions, increasing MAUs by 35%.
-• Optimized a fault tolerant background data processing pipeline ingesting from 4 sources, reducing processing time from 4 hours to 30 minutes and enabling schema standardization and multi-source data consolidation
-• Implemented Intuit QuickBooks onboarding with OAuth in TenantPay, enabling automated customer and transaction sync, reducing manual accounting effort by 60%
+• Designed and implemented a scalable rewards platform supporting 25+ events, awarding 40M+ points redeemable for gift cards or rent credits, along with monthly Rent Drop campaigns
+• Developed an MCP server integrating 50+ internal tools and business data across 3 cross-functional teams, enabling AI-powered natural-language analysis and self-service reporting, reducing reporting time by 85%
+• Optimized a fault tolerant ETL data processing pipeline ingesting from 4 sources, reducing processing time from 4 hours to 30 minutes through batch processing
 
 `
   },
