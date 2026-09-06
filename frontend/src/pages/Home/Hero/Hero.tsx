@@ -14,7 +14,7 @@ const Hero = () => {
           <p className={styles.subtitle}>Software Engineer</p>
           <p className={styles.location}>Delhi, India</p>
           <p className={styles.description}>
-            I am a Software Engineer at Oats Tech with 2.5 years of experience specializing in full
+            I am a Software Engineer at Oats Tech with 3+ years of experience specializing in full
             stack development, building scalable cloud-native SaaS platforms and high-volume payment
             systems. I build robust full stack systems with a focus on performance, security, and
             reliability.
